@@ -27,11 +27,12 @@ public class Dosen14Demo {
 
             Dsn[i] = new Dosen14(kode, nama, jenisKelamin, usia); 
         }
-
+        //tampil data dosen yang dipanggil dari file dosen14
         int nomor = 1; 
         for (Dosen14 d : Dsn) { 
             d.tampilInfo(nomor++);
         }
+        //Tampil Class Data Dosen
         DataDosen14.dataSemuaDosen(Dsn);
         DataDosen14.jumlahDosenPerJenisKelamin(Dsn);
         DataDosen14.rerataUsiaDosenPerJenisKelamin(Dsn);
